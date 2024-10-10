@@ -1,12 +1,132 @@
-/* font style for  the text */
+/* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
-/* font-family: "Azeret Mono", monospace; */
-/* univeral selector for default set up */
-*{
+
+/* Universal selector for default setup */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    letter-spacing: 0%;
 }
-/* header section start */
 
-/* header section end */
+/* Color variables */
+:root {
+    --text1-color: rgb(13, 19, 33);  
+    --text2-color: rgba(13, 19, 33, 0.7); 
+    --text3-color: rgba(13, 19, 33, 0.26); 
+    --text4-color: #ffffff; 
+}
+
+/* Header section start */
+/* Nav styles */
+nav {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 1px;
+    max-width: 1440px;
+    gap: 400px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--text1-color);
+}
+
+.nav-title {
+    color: var(--text1-color);
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 33px;
+}
+
+/* Resume button styles */
+.resume-btn {
+    border: 1px solid var(--text1-color);
+    background-color: var(--text4-color);
+    color: var(--text1-color);
+    border-radius: 8px;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 17px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.resume-btn:hover {
+    background-color: var(--text1-color);
+    color: var(--text4-color);
+}
+
+/* Banner styles start*/
+.banner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/Hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    max-height: 652px;
+}
+.banner-pic{
+    width: 240.28px;
+    height: 240px;
+    margin-top: 26px;
+    margin-bottom: 32px;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-title {
+    color: var(--text1-color);
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.banner-description {
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--text2-color);
+    font-size: 16px;
+    margin: 24px 0 32px 0;
+}
+
+/* Contact button styles */
+.btn-contact {
+    border: none;
+    border-radius: 8px;
+    background-color: var(--text1-color);
+    color: var(--text4-color);
+    padding: 21px 24px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 44px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+.btn-contact:hover {
+    background-color: var(--text4-color);
+    color: var(--text1-color);
+}
+.btn-contact > a {
+    text-decoration: none;
+}
+/*Contact button style end*/
+/* banner style end */
